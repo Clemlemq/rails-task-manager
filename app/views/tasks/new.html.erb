@@ -1,0 +1,16 @@
+<div class="m-5 container">
+  <h1>Add a New Task</h1>
+
+  <%= form_for(@task) do |f| %>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+      <%= f.label :details %>
+      <%= f.text_field :details %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+  <p class="border-bottom "></p>
+
+  <%= link_to "Back to list", tasks_path %>
+</div>
